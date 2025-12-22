@@ -1,5 +1,6 @@
-import Mathlib.LinearAlgebra.Basic
-import Mathlib.Analysis.NormedSpace.Basic
+import Mathlib.Data.Real.Basic
+import Mathlib.Topology.MetricSpace.Basic
+
 
 /-!
 # ToyModel.lean
