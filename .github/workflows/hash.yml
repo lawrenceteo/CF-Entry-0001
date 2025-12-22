@@ -1,0 +1,41 @@
+name: Courthouse — Hash Lean artifact
+
+on:
+  workflow_dispatch:         # run manually from the browser
+  push:
+    branches: [ main ]       # optional: run on every push to main
+
+jobs:
+  hash:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Compute SHA256 of Entry0001_Final.lean
+        id: hash
+        run: |
+          sha256sum Entry0001_Final.lean | tee HASH.txt
+          echo "SHA256=$(cut -d ' ' -f1 HASH.txt)" >> $GITHUB_OUTPUT
+
+      - name: Print hash
+        run: echo "SHA256: ${{ steps.hash.outputs.SHA256 }}"
+
+      # Optional: write hash into a registry file
+      - name: Update registry entry
+        if: ${{ github.ref_name == 'main' }}
+        run: |
+          sed -i "s/SHA256: 
+
+\[[^]]*\]
+
+/SHA256: ${{ steps.hash.outputs.SHA256 }}/" REGISTRY_CF_0001.md
+
+      - name: Commit registry update
+        if: ${{ github.ref_name == 'main' }}
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Courthouse: update CF-0001 SHA256 to ${{ steps.hash.outputs.SHA256 }}"
+          file_pattern: REGISTRY_CF_0001.md
