@@ -1,11 +1,9 @@
 import Lake
 open Lake DSL
 
-package CFEntry0001 {
-  -- No extra config needed
-}
+package ToyModel {}
 
 @[default_target]
-lean_lib CFEntry0001 {
+lean_lib ToyModel {
   srcDir := "."
 }
