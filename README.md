@@ -1,5 +1,7 @@
 # CF-Entry-0001: Structural Invariance of the D=2 Toy Model
 
+![Verify Entry 0001](https://github.com/lawrenceteo/CF-Entry-0001/actions/workflows/verify.yml/badge.svg)
+
 ## 🏛️ Project Mandate
 This repository constitutes **Entry 0001** of the Cognitive Formalism (CF) series. 
 It provides the inaugural formalization of the **Transcendence Theorem (TT)**, 
