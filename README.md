@@ -2,6 +2,13 @@
 
 ![Verify Entry 0001](https://github.com/lawrenceteo/CF-Entry-0001/actions/workflows/verify.yml/badge.svg)
 
+## Master index
+| Entry ID | Title | Status | Law | Hash |
+| --- | --- | --- | --- | --- |
+| CF-0001 | D=2 Stability Proof: PLA Refutation | ✅ Verified | `PLA_violates_CISI` | 0cbb9c0155ceade276ef67161aa897fafa023eb8747f81e109d0030efc376a86 |
+
+See full registry: [REGISTRY.md](./REGISTRY.md)
+
 ## 🏛️ Project Mandate
 This repository constitutes **Entry 0001** of the Cognitive Formalism (CF) series. 
 It provides the inaugural formalization of the **Transcendence Theorem (TT)**, 
