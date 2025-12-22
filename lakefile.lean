@@ -9,4 +9,3 @@ package CFEntry0001 {
 lean_lib CFEntry0001 {
   srcDir := "."
 }
-
