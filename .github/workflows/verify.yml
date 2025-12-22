@@ -1,0 +1,26 @@
+name: Verify Lean Proofs
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Lean 4
+      uses: leanprover/lean4-action@v1
+      with:
+        version: "v4.15.0"
+
+    - name: Build project
+      run: lake build
+
+    - name: Compute SHA256 of ToyModel.lean
+      run: sha256sum ToyModel.lean
