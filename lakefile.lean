@@ -2,14 +2,13 @@ import Lake
 open Lake DSL
 
 package ToyModel {
-  -- No extra config needed
+  dependencies := #[{
+    name := `mathlib,
+    src := Source.git "https://github.com/leanprover-community/mathlib4.git" "master"
+  }]
 }
-
-require mathlib from git
-  "https://github.com/leanprover-community/mathlib4.git" @ "master"
 
 @[default_target]
 lean_lib ToyModel {
   srcDir := "."
 }
-
