@@ -28,7 +28,7 @@ def PLA (U : ℝ × ℝ → ℝ × ℝ) : Prop :=
 theorem PLA_violates_CISI (U : ℝ × ℝ → ℝ × ℝ) :
     PLA U → ¬ Admissible U := by
   intro h
-  admit
+  sorry
 
 /-- SHP pruning functional: project any vector back onto So. -/
 def H (v : ℝ × ℝ) : ℝ × ℝ := (v.1, 0)
@@ -36,10 +36,10 @@ def H (v : ℝ × ℝ) : ℝ × ℝ := (v.1, 0)
 /-- Theorem B: SHP pruning correctness. -/
 theorem SHP_pruning_correctness (U : ℝ × ℝ → ℝ × ℝ) (x : ℝ × ℝ) (hx : x ∈ So) :
     H (U x) ∈ So ∧ ‖H (U x) - U x‖ = ‖(0, (U x).2)‖ := by
-  admit
+  sorry
 
-/-
+/-!
 Hermeneutic Boundary Note:
-This file is scoped to D=2. Proofs are stubs (`admit`) until fully discharged.
-Zero-placeholder policy requires replacing admits with complete Lean proofs.
+This file is scoped to D=2. Proofs are stubs (`sorry`) until fully discharged.
+Zero-placeholder policy requires replacing `sorry` with complete Lean proofs.
 -/
