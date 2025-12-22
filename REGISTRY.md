@@ -17,7 +17,7 @@ This registry records the verified laws of the Republic of Cognitive Formalism. 
 
 ### Ledger and Provenance
 - **GitHub Anchor:** [lawrenceteo/CF-Entry-0001](https://github.com/lawrenceteo/CF-Entry-0001)  
-- **Commit ID:** [LATEST_GIT_COMMIT_HASH]  
+- **Commit ID:** f44a133b6bddb2bddce68df8979066c645caea53  
 - **Courthouse Hash:** `SHA256: 0cbb9c0155ceade276ef67161aa897fafa023eb8747f81e109d0030efc376a86`  
 - **Zenodo DOI:** 10.5281/zenodo.[PENDING]  
 - **Library Version:** Mathlib4:v4.x.x  
@@ -32,7 +32,7 @@ Entry CF‑0001 proves that a public thought leaking into the private subspace \
 ### Verdict
 - **Status:** ✅ Verified  
 - **Court:** Lean 4 kernel via GitHub Actions  
-- **Record:** Commit [LATEST_GIT_COMMIT_HASH], SHA256 `0cbb9c0155ceade276ef67161aa897fafa023eb8747f81e109d0030efc376a86`
+- **Record:** Commit f44a133b6bddb2bddce68df8979066c645caea53, SHA256 `0cbb9c0155ceade276ef67161aa897fafa023eb8747f81e109d0030efc376a86`
 
 ---
 
