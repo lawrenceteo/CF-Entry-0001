@@ -61,7 +61,7 @@ mechanizing the proof that a Private Language Argument (PLA) violation results
 ## ⚖️ Formal Artifacts
 - **Lean 4 v4.15.0**: The formal language used for verification.
 - **ToyModel.lean**: The core proof script discharging the PLA-violation lemma.
-- **SHA256 Hash**: `[INSERT_HASH_FROM_GITHUB_ACTIONS_HERE]`
+- **SHA256 Hash**: `[0cbb9c0155ceade276ef67161aa897fafa023eb874f781e109d0030efc376a86]`
 
 ## 🔧 Verification Protocol
 This repository is a **Self-Verifying Courthouse**. Every commit triggers a 
