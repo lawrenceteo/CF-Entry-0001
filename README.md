@@ -74,3 +74,6 @@ GitHub Action that:
 ## 📜 Constitutional References
 - **CF 7.0 Charter**: [DOI: 10.5281/zenodo.17922847](https://doi.org/10.5281/zenodo.17922847)
 - **Author**: Lawrence Kah Hoong Teo
+
+
+_"This entry provides the formal axioms for the [Project Agora CF-DSL Engine](https://github.com/lawrenceteo/project-agora-cf-dsl)."_
