@@ -8,7 +8,7 @@ The following files are part of the CF 7.0 Charter Edition. To preserve mathemat
 
 | File Name | SHA256 Hash | Status |
 | :--- | :--- | :--- |
-| ToyModel.lean | [0cbb9c0155ceade276ef67161aa897fafa023eb8747f81e109d0030efc376a86] | Hashed Integrity Anchor |
+| ToyModel.lean | [77bd1278dc434843cb2371516075c3b6a798931d4db24862bace03becbed12f2] | Hashed Integrity Anchor |
 
 ## ⚖️ Legal Status
 All files within this repository, including those listed above, are governed by the **AGPL-3.0 License** found in this repository. Use of the hashed logic in any network-accessible service requires full source disclosure under the Affero mandate.
